@@ -1093,7 +1093,7 @@ trainMovementInterval = setInterval(function () {
 }, 333);
 /*					- intervals end -					*/
 
-
+// programmatic clicks to create Red Line
 $('#buildredTrack').click()
 $('#gameGridCell_0').click()
 $('#gameGridCell_1').click()
@@ -1109,8 +1109,9 @@ $('#gameGridCell_69').click()
 $('#gameGridCell_82').click()
 $('#gameGridCell_95').click()
 $('#buildredTrack').click()
-// $('#newredTrain').click()
+$('#newredTrain').click()
 
+// programmatic clicks to create Navy Line
 $('#buildnavyTrack').click()
 $('#gameGridCell_84').click()
 $('#gameGridCell_72').click()
@@ -1129,7 +1130,7 @@ $('#gameGridCell_11').click()
 $('#buildnavyTrack').click()
 $('#newnavyTrain').click()
 
-
+// programmatic clicks to create Orange Line
 $('#buildorangeTrack').click()
 $('#gameGridCell_49').click()
 $('#gameGridCell_50').click()
@@ -1143,25 +1144,9 @@ $('#gameGridCell_55').click()
 $('#gameGridCell_66').click()
 $('#gameGridCell_77').click()
 $('#buildorangeTrack').click()
-$('#neworangeTrain').click()
-					
-$('#buildredTrack').click()
-$('#gameGridCell_0').click()
-$('#gameGridCell_13').click()
-$('#gameGridCell_26').click()
-$('#gameGridCell_26').click()
-$('#gameGridCell_27').click()
-$('#gameGridCell_40').click()
-$('#gameGridCell_52').click()
-$('#gameGridCell_53').click()
-$('#gameGridCell_54').click()
-$('#gameGridCell_67').click()
-$('#gameGridCell_80').click()
-$('#gameGridCell_93').click()
-$('#gameGridCell_94').click()
-$('#gameGridCell_95').click()					
-$('#buildredTrack').click()
-$('#newredTrain').click()
-$('#newredTrain').click()
+$('#neworangeTrain').click()		
 
-					
+setTimeout(function fiveSecondDelayedDeploymentOfAdditionalTrains() {
+	$('#newredTrain').click()
+	$('#newnavyTrain').click()
+}, 5000);
