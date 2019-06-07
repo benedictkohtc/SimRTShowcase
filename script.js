@@ -24,7 +24,9 @@ $('#STOP').click(function () {
 });
 
 $('#test').click(function () {
-	generateStations();
+	console.log('lineAssetsMasterObject:',lineAssetsMasterObject);
+	console.log('gameGridArray',gameGridArray);
+	
 });
 
 $('#debugToggle').click(function () {
@@ -253,6 +255,8 @@ function generateGameGridArray (input) {
 }
 generateGameGridArray(desiredGameGridTotalSize);
 
+//gameGrid injection target
+
 // hardcoded game grid length, if grid is square, use square root as formula!
 var gameGridLength = 12;
 
@@ -361,6 +365,7 @@ var stationAssetsMasterObject = {
 };
 
 // object containing all line objects
+// line injection target
 var lineAssetsMasterObject = {};
 
 // object containing all train objects
