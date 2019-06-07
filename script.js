@@ -299,7 +299,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'triangle',
 		stationOverloadCounter: 0,
 		stationType: '\u25B2',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station0': {
@@ -307,7 +307,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'triangle',
 		stationOverloadCounter: 0,
 		stationType: '\u25B2',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station44': {
@@ -315,7 +315,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'triangle',
 		stationOverloadCounter: 0,
 		stationType: '\u25B2',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station84': {
@@ -323,7 +323,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station77': {
@@ -331,7 +331,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station49': {
@@ -339,7 +339,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station95': {
@@ -347,7 +347,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station30': {
@@ -355,7 +355,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'square',
 		stationOverloadCounter: 0,
 		stationType: '\u2B1B',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []}
 };
