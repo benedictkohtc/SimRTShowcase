@@ -35,7 +35,7 @@ $('#toggleGridNumbers').click(function () {
 	$('.debugGrid').toggle();
 });
 
-var disableLoseCondition = false;
+var disableLoseCondition = true;
 $('#toggleLoseCondition').click(function () {
 	if (disableLoseCondition === false) {
 		disableLoseCondition = true;
