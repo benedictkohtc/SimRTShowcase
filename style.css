@@ -1,0 +1,398 @@
+body {
+    background-color: black;
+    color: #b5b5b5;
+}
+
+p {
+    margin: 0px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.spacer {
+    margin-bottom: 40px;
+}
+
+#gameGridContainer {
+    width: 1250px;
+    display: inline-block;
+}
+
+.gameGridCell {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #1e1e1e;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.trackPlaceholder {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+}
+
+#redEndOfLine {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#navyEndOfLine {
+    width: 20px;
+    height: 20px;
+    background-color: navy;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#orangeEndOfLine {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.trainStations {
+    font-size: 26px;
+}
+
+.stationPlatform {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.train {
+    font-size: 8px;
+    height: 35px;
+    width: 18px;
+    position: absolute;
+    top: 32.5px;
+    left: 41px;
+    z-index: 5;
+    background-color: black;
+}
+
+.redColouredTrain {
+    border: 2px solid red;
+    border-top: 8px solid red;
+}
+
+.navyColouredTrain {
+    border: 2px solid navy;
+    border-top: 8px solid navy;
+}
+
+.orangeColouredTrain {
+    border: 2px solid orange;
+    border-top: 8px solid orange;
+}
+
+#gameControls {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 50px;
+}
+
+#resultTarget {
+    height: 20px;
+    font-size: 15px
+}
+
+#resourceStatus {
+    height: 20px;
+    font-size: 20px
+}
+
+#scoreTarget {
+    height: 20px;
+    text-align: center;
+    font-family: 'Muli', sans-serif;
+}
+
+#gameover {
+    width: 500px;
+    margin: 300px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#redLineControls {
+    border: 3px solid maroon;
+    border-radius: 10px;
+}
+
+#navyLineControls {
+    border: 3px solid navy;
+    border-radius: 10px;
+}
+
+#orangeLineControls {
+    border: 3px solid orange;
+    border-radius: 10px;
+}
+
+.moveNW {
+    animation-duration: 333ms;
+    animation-name: moveNW;
+    transform: rotate(315deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveNW {
+    from {}
+    to {
+        transform: rotate(315deg) translateY(-130px);
+    }
+}
+
+.moveN {
+    animation-duration: 333ms;
+    animation-name: moveN;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveN {
+    from {}
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+.moveNE {
+    animation-duration: 333ms;
+    animation-name: moveNE;
+    transform: rotate(45deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveNE {
+    from {}
+    to {
+        transform: rotate(45deg) translateY(-130px);
+    }
+}
+
+.moveW {
+    animation-duration: 333ms;
+    animation-name: moveW;
+    transform: rotate(270deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveW {
+    from {}
+    to {
+        transform: rotate(270deg) translateY(-100px);
+    }
+}
+
+.moveE {
+    animation-duration: 333ms;
+    animation-name: moveE;
+    transform: rotate(90deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveE {
+    from {}
+    to {
+        transform: rotate(90deg) translateY(-100px);
+    }
+}
+
+.moveSW {
+    animation-duration: 333ms;
+    animation-name: moveSW;
+    transform: rotate(225deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveSW {
+    from {}
+    to {
+        transform: rotate(225deg) translateY(-130px);
+    }
+}
+
+.moveS {
+    animation-duration: 333ms;
+    animation-name: moveS;
+    transform: rotate(180deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveS {
+    from {}
+    to {
+        transform: rotate(180deg) translateY(-100px);
+    }
+}
+
+.moveSE {
+    animation-duration: 333ms;
+    animation-name: moveSE;
+    transform: rotate(135deg);
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveSE {
+    from {}
+    to {
+        transform: rotate(135deg) translateY(-130px);
+    }
+}
+
+.trackDisplayN {
+    height: 10px;
+    width: 50px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.trackDisplayS {
+    height: 10px;
+    width: 50px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    top: 70px;
+    left: 25px;
+}
+
+.trackDisplayE {
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.trackDisplayW {
+    height: 10px;
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.trackDisplayNW {
+    height: 10px;
+    width: 73px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 22px;
+    left: -13px;
+}
+
+.trackDisplaySE {
+    height: 10px;
+    width: 73px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 72px;
+    left: 37px;
+}
+
+.trackDisplayNE {
+    height: 10px;
+    width: 73px;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 22px;
+    left: 40px;
+}
+
+.trackDisplaySW {
+    height: 10px;
+    width: 73px;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 71px;
+    left: -10px;
+}
+
+
+/*
+currently set up for 3 lines.
+for 6 lines
+background-image: weave of thirds
+background-position: top or bottom;
+background-size: 25px 5px;
+*/
+
+.redTrainLine {
+    background-image: linear-gradient(to right, red 0%, red 33%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%);
+    /*background-position: top;*/
+    background-size: 25px 10px;
+    /*width & height*/
+    background-repeat: repeat-x;
+}
+
+.navyTrainLine {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, navy 33%, navy 66%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
+    /*background-position: bottom;*/
+    background-size: 25px 10px;
+    /*width & height*/
+    background-repeat: repeat-x;
+}
+
+.orangeTrainLine {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 66%, orange 66%, orange 100%);
+    /*background-position: bottom;*/
+    background-size: 25px 10px;
+    background-repeat: repeat-x;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

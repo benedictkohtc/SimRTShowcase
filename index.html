@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SimRT - Showcase Version Three Point Nine</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="jqueryui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300" rel="stylesheet">
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-93800902-2', 'auto');
+	ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+    <div id="scoreTarget"></div>
+    <div id="gameGridContainer"></div>
+    <div id="gameControls">
+
+        <div id="resourceStatus">5 trains available</div>
+        <div id="resultTarget"></div>
+        <div class='spacer'></div>
+        <div id="redLineControls">
+            <button id="buildredTrack">BUILD RED LINE</button>
+            <button id="removeEntireredLine">DESTROY RED LINE</button>
+            <div></div>
+            <button id="newredTrain">DEPLOY RED TRAIN</button>
+            <button id="removeredTrain">REMOVE RED TRAIN</button>
+        </div>
+        <div class='spacer'></div>
+        <div id="navyLineControls">
+            <button id="buildnavyTrack">BUILD BLUE LINE</button>
+            <button id="removeEntirenavyLine">DESTROY BLUE LINE</button>
+            <div></div>
+            <button id="newnavyTrain">DEPLOY BLUE TRAIN</button>
+            <button id="removenavyTrain">REMOVE BLUE TRAIN</button>
+        </div>
+        <div class='spacer'></div>
+        <div id="orangeLineControls">
+            <button id="buildorangeTrack">BUILD ORANGE LINE</button>
+            <button id="removeEntireorangeLine">DESTROY ORANGE LINE</button>
+            <div></div>
+            <button id="neworangeTrain">DEPLOY ORANGE TRAIN</button>
+            <button id="removeorangeTrain">REMOVE ORANGE TRAIN</button>
+        </div>
+        <div class='spacer'></div>
+        <div>
+            <button id="debugToggle">YOU DIDN'T SEE ANYTHING</button>
+        </div>
+        <div>
+            <button id="STOP" class="debug">STAHHPP!</button>
+            <button id="test" class="debug">TEST</button>
+            <button id="toggleGridNumbers" class="debug">GRID DEBUG</button>
+        </div>
+        <div>
+            <button id="toggleLoseCondition" class="debug">LOSE CONDITION ACTIVE</button>
+        </div>
+        <div>
+            <button id="clearAllStations" class="debug">EVACUATE ALL STATIONS!</button>
+        </div>
+        <div>
+            <button id="clearAllTracks" class="debug">SCREW THE PASSENGERS! <br>OBLITERATE EVERYTHING!</button>
+        </div>
+        <div>
+            <button id="unlimitedTrains" class="debug">MY NAME IS TONY STARK</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
