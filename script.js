@@ -24,7 +24,9 @@ $('#STOP').click(function () {
 });
 
 $('#test').click(function () {
-	generateStations();
+	console.log('lineAssetsMasterObject:',lineAssetsMasterObject);
+	console.log('gameGridArray',gameGridArray);
+	
 });
 
 $('#debugToggle').click(function () {
@@ -35,7 +37,7 @@ $('#toggleGridNumbers').click(function () {
 	$('.debugGrid').toggle();
 });
 
-var disableLoseCondition = false;
+var disableLoseCondition = true;
 $('#toggleLoseCondition').click(function () {
 	if (disableLoseCondition === false) {
 		disableLoseCondition = true;
@@ -299,7 +301,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'triangle',
 		stationOverloadCounter: 0,
 		stationType: '\u25B2',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station0': {
@@ -307,7 +309,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'triangle',
 		stationOverloadCounter: 0,
 		stationType: '\u25B2',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station44': {
@@ -315,7 +317,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'triangle',
 		stationOverloadCounter: 0,
 		stationType: '\u25B2',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station84': {
@@ -323,7 +325,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station77': {
@@ -331,7 +333,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station49': {
@@ -339,7 +341,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station95': {
@@ -347,7 +349,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'circle',
 		stationOverloadCounter: 0,
 		stationType: '\u2B24',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []},
 	'station30': {
@@ -355,7 +357,7 @@ var stationAssetsMasterObject = {
 		stationTypePlaintext: 'square',
 		stationOverloadCounter: 0,
 		stationType: '\u2B1B',
-		stationStatus: 'hidden',
+		stationStatus: 'active',
 		stationLinesArray: [],
 	stationPassengerList: []}
 };
@@ -1087,3 +1089,61 @@ trainMovementInterval = setInterval(function () {
 	}
 }, 333);
 /*					- intervals end -					*/
+
+// programmatic clicks to create Red Line
+$('#buildredTrack').click()
+$('#gameGridCell_0').click()
+$('#gameGridCell_1').click()
+$('#gameGridCell_14').click()
+$('#gameGridCell_27').click()
+$('#gameGridCell_39').click()
+$('#gameGridCell_52').click()
+$('#gameGridCell_53').click()
+$('#gameGridCell_54').click()
+$('#gameGridCell_55').click()
+$('#gameGridCell_56').click()
+$('#gameGridCell_69').click()
+$('#gameGridCell_82').click()
+$('#gameGridCell_95').click()
+$('#buildredTrack').click()
+$('#newredTrain').click()
+
+// programmatic clicks to create Navy Line
+$('#buildnavyTrack').click()
+$('#gameGridCell_84').click()
+$('#gameGridCell_72').click()
+$('#gameGridCell_60').click()
+$('#gameGridCell_49').click()
+$('#gameGridCell_50').click()
+$('#gameGridCell_51').click()
+$('#gameGridCell_52').click()
+$('#gameGridCell_53').click()
+$('#gameGridCell_54').click()
+$('#gameGridCell_55').click()
+$('#gameGridCell_44').click()
+$('#gameGridCell_33').click()
+$('#gameGridCell_22').click()
+$('#gameGridCell_11').click()
+$('#buildnavyTrack').click()
+$('#newnavyTrain').click()
+
+// programmatic clicks to create Orange Line
+$('#buildorangeTrack').click()
+$('#gameGridCell_49').click()
+$('#gameGridCell_50').click()
+$('#gameGridCell_51').click()
+$('#gameGridCell_40').click()
+$('#gameGridCell_29').click()
+$('#gameGridCell_30').click()
+$('#gameGridCell_31').click()
+$('#gameGridCell_44').click()
+$('#gameGridCell_55').click()
+$('#gameGridCell_66').click()
+$('#gameGridCell_77').click()
+$('#buildorangeTrack').click()
+$('#neworangeTrain').click()		
+
+setTimeout(function fiveSecondDelayedDeploymentOfAdditionalTrains() {
+	$('#newredTrain').click()
+	$('#newnavyTrain').click()
+}, 5000);
